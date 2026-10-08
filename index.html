@@ -1,1 +1,117 @@
+!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shun Tu - China Travel Guides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+
+    <!-- 導覽列 -->
+    <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-orange-400">Shun Tu</h1>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex gap-6 text-sm">
+                    <a href="#about" class="hover:text-orange-400 transition" data-zh="关于作者" data-en="About">关于作者</a>
+                    <a href="#books" class="hover:text-orange-400 transition" data-zh="我的作品" data-en="Books">我的作品</a>
+                </nav>
+                <button id="lang-btn" onclick="toggleLanguage()" class="bg-gray-800 hover:bg-gray-700 text-xs px-3 py-1.5 rounded border border-gray-700 transition">EN / 中文</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主視覺區塊 -->
+    <section class="py-20 text-center bg-gradient-to-b from-gray-900 to-gray-950 border-b border-gray-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-white" data-zh="探索真实、深度、无碍的中国之旅" data-en="Discover Real, In-depth & Seamless China Travel">探索真实、深度、无碍的中国之旅</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed" data-zh="用最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。" data-en="Opening the door to China for independent travelers with the most authentic perspectives.">用最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。</p>
+            <a href="#books" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-200" data-zh="浏览全部著作" data-en="Explore Books">浏览全部著作</a>
+        </div>
+    </section>
+
+    <!-- 書籍作品展示區塊 -->
+    <section id="books" class="py-16 max-w-5xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-10 text-center border-b border-gray-800 pb-4 text-white" data-zh="我的中国旅游系列丛书" data-en="My China Travel Book Series">我的中国旅游系列丛书</h3>
+        
+        <div class="space-y-6">
+            
+            <!-- 書籍 1：今日新書 (50 Essential FAQs) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center shadow-xl hover:border-orange-500 transition">
+                <img src="cover.jpg" alt="The Ultimate China Travel Survival Guide" class="w-36 h-auto object-cover rounded-lg shadow flex-shrink-0">
+                <div class="flex-grow text-center md:text-left">
+                    <span class="inline-block bg-orange-500 text-white text-xs px-2.5 py-1 rounded-full font-bold mb-2">NEW 今日发行</span>
+                    <h4 class="text-lg font-bold text-white mb-2">The Ultimate China Travel Survival Guide: 50 Essential FAQs for a Seamless Journey</h4>
+                    <p class="text-sm text-gray-400 mb-2">From Pre-Trip Preparation to Safe Return. Essential insights for your journey.</p>
+                    <p class="text-xs text-orange-400 mb-4 font-mono">ASIN: BOHMCMCGPJ</p>
+                    <a href="https://www.amazon.com" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 px-6 rounded-lg transition" data-zh="前往 Amazon 选购" data-en="Buy on Amazon">前往 Amazon 选购</a>
+                </div>
+            </div>
+
+            <!-- 書籍 2：200 Essential Phrases -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center shadow-xl hover:border-orange-500 transition">
+                <img src="cover2.jpg" alt="200 Essential Phrases" class="w-36 h-auto object-cover rounded-lg shadow flex-shrink-0">
+                <div class="flex-grow text-center md:text-left">
+                    <h4 class="text-lg font-bold text-white mb-2">China Travel Survival Guide: 200 Essential Phrases for Independent Travelers</h4>
+                    <p class="text-sm text-gray-400 mb-2">Master key phrases for smooth communication across China.</p>
+                    <p class="text-xs text-orange-400 mb-4 font-mono">ASIN: BOHJZKS5V9</p>
+                    <a href="https://www.amazon.com" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 px-6 rounded-lg transition" data-zh="前往 Amazon 选购" data-en="Buy on Amazon">前往 Amazon 选购</a>
+                </div>
+            </div>
+
+            <!-- 書籍 3：Mastering China Travel -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center shadow-xl hover:border-orange-500 transition">
+                <img src="cover3.jpg" alt="Mastering China Travel" class="w-36 h-auto object-cover rounded-lg shadow flex-shrink-0">
+                <div class="flex-grow text-center md:text-left">
+                    <h4 class="text-lg font-bold text-white mb-2">Mastering China Travel: No Cash, No Problem</h4>
+                    <p class="text-sm text-gray-400 mb-2">The Complete Setup Manual for Connectivity, Payments, and Daily Navigation (2026 Edition).</p>
+                    <p class="text-xs text-orange-400 mb-4 font-mono">ASIN: BOHK7YYCP6</p>
+                    <a href="https://www.amazon.com" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 px-6 rounded-lg transition" data-zh="前往 Amazon 选购" data-en="Buy on Amazon">前往 Amazon 选购</a>
+                </div>
+            </div>
+
+            <!-- 書籍 4：Eating in China -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 flex flex-col md:flex-row gap-6 items-center shadow-xl hover:border-orange-500 transition">
+                <img src="cover4.jpg" alt="Eating in China" class="w-36 h-auto object-cover rounded-lg shadow flex-shrink-0">
+                <div class="flex-grow text-center md:text-left">
+                    <h4 class="text-lg font-bold text-white mb-2">EATING IN CHINA: An Insider's Guide to Regional Cuisines, Street Food, and Culinary Survival</h4>
+                    <p class="text-sm text-gray-400 mb-2">An Insider's Guide to Regional Cuisines, Street Food, and Culinary Survival.</p>
+                    <p class="text-xs text-orange-400 mb-4 font-mono">ASIN: BOHK8MC743</p>
+                    <a href="https://www.amazon.com" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 px-6 rounded-lg transition" data-zh="前往 Amazon 选购" data-en="Buy on Amazon">前往 Amazon 选购</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 關於作者區塊 -->
+    <section id="about" class="py-16 bg-gray-900 border-t border-b border-gray-800 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-2xl font-bold mb-6 text-white" data-zh="关于作者 - Shun Tu" data-en="About the Author - Shun Tu">关于作者 - Shun Tu</h3>
+            <p class="text-gray-300 leading-relaxed" data-zh="致力于通过最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。告别浮于表面，带你体验真正的中国。" data-en="Dedicated to opening the door to China for global independent travelers through the most authentic perspectives.">致力于通过最硬核、最真实的视角，为全球独立旅行者打开通往中国的大门。告别浮于表面，带你体验真正的中国。</p>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-950 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Shun Tu. <span data-zh="保留所有权利。" data-en="All rights reserved.">保留所有权利。</span></p>
+    </footer>
+
+    <!-- 語言切換腳本 -->
+    <script>
+        let currentlang = 'zh';
+        function toggleLanguage() {
+            currentlang = currentlang === 'zh' ? 'en' : 'zh';
+            const elements = document.querySelectorAll('[data-zh]');
+            elements.forEach(el => {
+                if (el.getAttribute(`data-${currentlang}`)) {
+                    el.innerText = el.getAttribute(`data-${currentlang}`);
+                }
+            });
+            document.getElementById('lang-btn').innerText = currentlang === 'zh' ? 'EN / 中文' : '中文 / EN';
+        }
+    </script>
+</body>
+</html>
 
