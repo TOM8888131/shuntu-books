@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顺图书店 - 中国旅游指南网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
+    <!-- 导航栏 -->
+    <header class="bg-gray-900 border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-orange-400">顺图书店</h1>
+            <div class="flex items-center gap-4">
+                <nav class="hidden md:flex gap-6 text-sm">
+                    <a href="#about" class="hover:text-orange-400 transition">关于作者</a>
+                    <a href="#books" class="hover:text-orange-400 transition">我的作品</a>
+                </nav>
+            </div>
+            <button id="lang-btn" onclick="切换语言()" class="bg-gray-800 hover:bg-gray-700 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition">EN / 中文</button>
+        </div>
+    </header>
+
+    <!-- 主体内容区 -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- 关于作者 / 英雄区 -->
+        <section id="about" class="mb-16 text-center md:text-left flex flex-col md:flex-row items-center gap-8 bg-gray-900 p-8 rounded-2xl border border-gray-800">
+            <div class="flex-1">
+                <span class="bg-orange-500/10 text-orange-400 text-xs font-semibold px-3 py-1 rounded-full border border-orange-500/20">官方独立出版</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-3 text-white">用真实的视角，带你深度看中国</h2>
+                <p class="text-gray-400 leading-relaxed mb-6">欢迎来到顺图书店。这里为您提供最硬核、最接地气的中国旅行指南与深度纪实作品。无论是无现金社会的便捷，还是舌尖上的中华美味，我们用最不一样的视野，为你揭开真实中国的面纱。</p>
+            </div>
+        </section>
+
+        <!-- 精选作品区 -->
+        <section id="books" class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-orange-400 border-b border-gray-800 pb-2">精选作品</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 第一本书 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-white">50 Essential FAQs</h3>
+                        <p class="text-gray-400 mb-4 text-sm">China Travel Guide</p>
+                    </div>
+                    <div>
+                        <a href="https://www.amazon.com/dp/B0HMCMCGPJ" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition">前往 Amazon 购买</a>
+                    </div>
+                </div>
+
+                <!-- 第二本书 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Eating in China</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Electronic Edition</p>
+                    </div>
+                    <div>
+                        <a href="https://www.amazon.com/dp/B0HK8MC743" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition">前往 Amazon 购买</a>
+                    </div>
+                </div>
+
+                <!-- 第三本书 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-white">No Cash, No Problem</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Electronic Edition</p>
+                    </div>
+                    <div>
+                        <a href="https://www.amazon.com/dp/B0HK7YYCP6" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition">前往 Amazon 购买</a>
+                    </div>
+                </div>
+
+                <!-- 第四本书 -->
+                <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-white">东西文明撕面指南</h3>
+                        <p class="text-gray-400 mb-4 text-sm">从凡尔赛香水到北方大澡堂</p>
+                    </div>
+                    <div>
+                        <a href="https://www.amazon.com" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition">前往 Amazon 购买</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 顺图书店 (Shuntu Books). All rights reserved.</p>
+    </footer>
+
+    <script>
+        function 切换语言() {
+            alert("多语言切换功能正在筹备中！");
+        }
+    </script>
+</body>
+</html>
